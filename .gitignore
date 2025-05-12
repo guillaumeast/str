@@ -1,0 +1,8 @@
+# Core
+.DS_Store
+
+# Prompt and codebase files for LLMs
+ai/
+
+# Binary
+build/
