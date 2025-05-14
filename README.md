@@ -4,8 +4,8 @@
 [![Build](https://img.shields.io/badge/build-clang++-orange)](https://clang.llvm.org/)
 [![Terminal CLI](https://img.shields.io/badge/type-CLI-lightgrey)](https://en.wikipedia.org/wiki/Command-line_interface)
 [![Platform: Unix](https://img.shields.io/badge/platform-Unix-darkgreen)](https://en.wikipedia.org/wiki/Unix)
-[![Status: v0.2](https://img.shields.io/badge/status-v0.2-green)](#️️️️changelog)
-[![License: MIT](https://img.shields.io/badge/license-MIT-white)](./LICENSE)
+[![Status: v0.2](https://img.shields.io/badge/status-v0.2-green)](https://github.com/guillaumeast/str/releases/tag/v0.2)
+[![License: MIT](https://img.shields.io/badge/license-MIT-white)](https://github.com/guillaumeast/str/blob/master/LICENCE)
 
 > 🧠 **`str`** is a `terminal`-friendly, `unicode`-`ansi`-aware `string` manipulation `CLI` — minimal like `cut` or `sed`, but `C++`-powered, `ANSI`/`escape`-safe, and fully `Unicode`-aware (including `wide` and `combined` emojis).
 
@@ -159,7 +159,7 @@ str/
 ## 📦 Dependencies
 
 - [`libunistring`](https://www.gnu.org/software/libunistring/)
-- C++17 compiler (`clang++` or `g++`)
+- `C++17` compiler (`clang++` or `g++`)
 
 ---
 
@@ -167,10 +167,10 @@ str/
 
 ### [v0.2] – 2024-05-14
 
-- 🏗 Migrated full codebase from C to modern C++
+- 🏗 Migrated full codebase from `C` to modern `C++`
 - ✨ Added `Text`, `Column`, and `Row` classes
 - ✨ New CLI commands: `clean`, `width`, `height`, `split`, `repeat`, `row`
-- ✅ Unicode and ANSI-aware padding and width calculation
+- ✅ `Unicode` and `ANSI`-aware padding and width calculation
 - 📦 Structure: `src/`, `include/`, `build/`, `Makefile`
 
 ---
@@ -179,4 +179,4 @@ str/
 
 Made by [@guillaumeast](https://github.com/guillaumeast) with ❤️
 
-MIT License
+[MIT License](https://github.com/guillaumeast/str/blob/master/LICENCE)
