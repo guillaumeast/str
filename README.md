@@ -5,7 +5,6 @@
 [![Terminal CLI](https://img.shields.io/badge/type-CLI-lightgrey)](https://en.wikipedia.org/wiki/Command-line_interface)
 [![Platform: Unix](https://img.shields.io/badge/platform-Unix-darkgreen)](https://en.wikipedia.org/wiki/Unix)
 [![Status: v0.2](https://img.shields.io/badge/status-v0.2-green)](https://github.com/guillaumeast/str/releases/tag/v0.2)
-[![License: MIT](https://img.shields.io/badge/license-MIT-white)](https://github.com/guillaumeast/str/blob/master/LICENCE)
 
 > 🧠 **`str`** is a `terminal`-friendly, `unicode`-`ansi`-aware `string` manipulation `CLI` — minimal like `cut` or `sed`, but `C++`-powered, `ANSI`/`escape`-safe, and fully `Unicode`-aware (including `wide` and `combined` emojis).
 
@@ -178,5 +177,3 @@ str/
 ## 🧑 Author
 
 Made by [@guillaumeast](https://github.com/guillaumeast) with ❤️
-
-[MIT License](https://github.com/guillaumeast/str/blob/master/LICENCE)
