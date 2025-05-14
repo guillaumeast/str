@@ -2,9 +2,9 @@
 # 🚧 str 🚧 (not ready for production)
 
 `C` programm to easily handle `utf8` strings:
+- `str clean <string>` → Returns only visible chars of `string` (removes all `ANSI escape codes`)
 - `str width <string>` → Returns visual width of `string` (number of terminal `columns` really used to display it)
 - `str height <string>` → Returns `string` lines count (⚠️ not related to terminal display)
-- `str clean <string>` → Returns only visible chars of `string` (removes all `ANSI escape codes`)
 - `str split <string> <separator>` → Returns each splitted `part` into a new line
 - `str repeat <count> <string> <opt:separator>` → Returns a merged `string`
 - `str row <strings> <opt:separator>` → Merges N multiline strings row‑by‑row, inserting `separator` between columns

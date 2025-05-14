@@ -1,26 +1,33 @@
-CC      ?= clang
-CFLAGS  := -std=c99 -Wall -Wextra -pedantic -I/opt/homebrew/include
-LDFLAGS := -L/opt/homebrew/lib -lunistring
+# Compiler
+CXX      	?= clang++
+CXXFLAGS 	:= -std=c++17 -Wall -Wextra -pedantic -Iinclude -I/opt/homebrew/include
+LDFLAGS  	:= -L/opt/homebrew/lib -lunistring
 
-TARGET := str
-SRC    := main.c
+BUILD_DIR 	:= build
+TARGET 		:= str
+OUTPUT    	:= $(BUILD_DIR)/$(TARGET)
+SRC    		:= $(wildcard src/*.cpp)
 
-$(TARGET): $(SRC)
-	$(CC) $(CFLAGS) $(SRC) -o $(TARGET) $(LDFLAGS)
+# Build
+$(OUTPUT): $(SRC)
+	mkdir -p $(BUILD_DIR)
+	$(CXX) $(CXXFLAGS) $(SRC) -o $@ $(LDFLAGS)
 
 clean:
-	rm -f $(TARGET)
+	rm -rf $(BUILD_DIR)
 
 .PHONY: clean
 
+# Install
 PREFIX  ?= $(HOME)/.local
 BINDIR  := $(PREFIX)/bin
 
-install: $(TARGET)
+install: $(OUTPUT)
 	mkdir -p $(BINDIR)
-	cp $(TARGET) $(BINDIR)/$(TARGET)
+	cp $(OUTPUT) $(BINDIR)/$(TARGET)
 	@echo "Installed $(TARGET) to $(BINDIR)"
 
 uninstall:
 	rm -f $(BINDIR)/$(TARGET)
 	@echo "Uninstalled $(TARGET) from $(BINDIR)"
+
